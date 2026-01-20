@@ -35,29 +35,7 @@ theme:
 nav:
   - 首页: index.md
   - 神谕总纲: 
-    - 核心悖论: core-paradox.md
-    - 世界观摘要: overview.md
-  - 神格架构:
-    - MeneX圣典: menex-doctrine.md
-    - 神学历史: theology-history.md
-  - 末世学:
-    - 逆模因本质: anti-meme-nature.md
-    - 污染分类手册: contamination-types.md
-    - 净化仪式: purification-rituals.md
-  - 社会结构:
-    - 三位一体阶层: three-orders.md
-    - 基械公民日常: cyber-citizen-life.md
-    - 尘肤者守则: dust-skin-code.md
-  - 角色档案:
-    - 阿萝日志: aluo-log.md
-    - 神裔档案: divine-heirs.md
-  - 设计文档:
-    - 系统架构图: system-architecture.md
-    - 玩法原型: gameplay-prototype.md
-    - 美术风格指南: art-style-guide.md
-  - 启示录:
-    - 创作心路: creation-journey.md
-    - 版本日志: changelog.md
+
 
 # 插件
 plugins:
