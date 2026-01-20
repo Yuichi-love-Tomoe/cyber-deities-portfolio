@@ -1,0 +1,92 @@
+site_name: 赛博神明档案馆
+site_description: 一个用科幻技术实现神权社会的世界观设定
+site_author: 你的名字
+
+theme:
+  name: material
+  language: zh
+  palette:
+    # 主色调：深紫色+金色，体现神圣科技感
+    - scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: 切换深色模式
+    - scheme: slate  # 深色模式配色
+      primary: black
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: 切换浅色模式
+  
+  # 启用主题功能
+  features:
+    - navigation.tabs        # 导航标签
+    - navigation.sections    # 导航章节
+    - navigation.expand      # 可展开导航
+    - navigation.top         # 返回顶部
+    - search.suggest         # 搜索建议
+    - search.highlight       # 搜索高亮
+    - content.tabs.link      # 内容标签
+    - content.code.annotate  # 代码注解
+
+# 导航结构（这就是你的「神圣档案馆」目录）
+nav:
+  - 首页: index.md
+  - 神谕总纲: 
+    - 核心悖论: core-paradox.md
+    - 世界观摘要: overview.md
+  - 神格架构:
+    - MeneX圣典: menex-doctrine.md
+    - 神学历史: theology-history.md
+  - 末世学:
+    - 逆模因本质: anti-meme-nature.md
+    - 污染分类手册: contamination-types.md
+    - 净化仪式: purification-rituals.md
+  - 社会结构:
+    - 三位一体阶层: three-orders.md
+    - 基械公民日常: cyber-citizen-life.md
+    - 尘肤者守则: dust-skin-code.md
+  - 角色档案:
+    - 阿萝日志: aluo-log.md
+    - 神裔档案: divine-heirs.md
+  - 设计文档:
+    - 系统架构图: system-architecture.md
+    - 玩法原型: gameplay-prototype.md
+    - 美术风格指南: art-style-guide.md
+  - 启示录:
+    - 创作心路: creation-journey.md
+    - 版本日志: changelog.md
+
+# 插件
+plugins:
+  - search
+      
+# 扩展
+markdown_extensions:
+  - admonition                 # 提示框
+  - pymdownx.details           # 可折叠内容
+  - pymdownx.superfences       # 代码块增强
+  - pymdownx.tabbed:           # 选项卡
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true          # 目录链接
+
+# 网站图标
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/你的用户名
+      name: GitHub
+      
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+
+# 版权信息
+copyright: |
+  &copy; 2023 赛博神明项目 - 此世界观受神圣启示而生，文档基于MkDocs Material主题构建。
